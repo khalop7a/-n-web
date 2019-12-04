@@ -1,0 +1,37 @@
+<HTML>
+        <HEAD>
+        <TITLE> vidu</TITLE>
+        <SCRIPT LANGUAGE="JavaScript">
+        // DEFINE VARIABLES FOR REST OF SCRIPT
+        var question="What is 10+10?";
+        var answer=20;
+        var correct='CORRECT';
+        var incorrect='INCORRECT';
+        // ASK THE QUESTION
+        var response = prompt(question,"0");
+        // CHECK THE ANSWER THE FIRST TIME
+        if (response != answer) {
+        // THE ANSWER WAS WRONG: OFFER A SECOND chAncE
+        if (confirm("Wrong! Press OK for a second chance."))
+        response = prompt(question,"0");
+        } else {
+        // THE ANSWER WAS RIGHT: OFFER A SECOND QUESTION
+        if (confirm("Correct! Press OK for a second question.")) {
+        question = "What is 10*10?";
+        answer = 100;
+        response = prompt (question,"0");
+        } }
+        // CHECK THE ANSWER
+        var output = (response == answer) ? correct: incorrect;
+        // STOP HIDING FROM OTHER BROWSERS 
+        </SCRIPT>
+        </HEAD>
+        <BODY>
+            <h2><a href="../index.html">TRANG CHỦ</a></h2>
+        <SCRIPT LANGUAGE="JavaScript">
+        // OUTPUT RESULT
+        document.write(output);
+        // STOP HIDING FROM OTHER BROWSERS
+        </SCRIPT>
+        </BODY>
+        </HTML>

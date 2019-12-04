@@ -1,0 +1,46 @@
+#Bigg{
+    width: 45% ;
+    height: 45%;
+    left: 3%;
+    position: absolute;
+    background-image: url(https://chaymoc.com/wp-content/uploads/2018/11/co-bao-gio-ban-ngam-hoang-hon-chay-moc-03.jpg);
+}
+.Maokai{
+    width:1000px;
+    height: 1000px;
+    background-color: #C5C48B;
+    position: relative;
+}
+.Lucian{
+    width: 45%;
+    height: 45%;
+    right: 3%;
+    position: absolute;
+    background-image: url(https://znews-photo.zadn.vn/w1024/Uploaded/mdf_nsozxd/2018_08_17/vutru650.jpg);
+}
+.Yasuo{
+    width: 45%;
+    height: 45%;
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+    background-image: url(https://phongvu.vn/lmht/wp-content/uploads/2018/08/Yasuo_0.jpg);
+}
+.Hecarim{
+    width: 45%;
+    height:45%;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    background-color: aquamarine;
+}
+.a1{
+    padding-left: 15px;
+    font-size: 15px;
+    color:red;
+}
+table,td{
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+}

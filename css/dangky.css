@@ -1,0 +1,347 @@
+@charset "utf-8";
+/*-------------Header-------------*/
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+a{
+	text-decoration:none;
+	color: inherit;
+}
+header{
+	background-color:#4B5B6E;
+	box-shadow: 5px 5px 5px #424141;
+	height: 100px;
+	position:fixed;
+	width: 100%;
+	top: 0;
+	left:0;
+	opacity: 0.95;
+	display: flex
+}
+.position{
+	color: #ff8c11;
+	font-weight: bold;
+	}
+.logo {
+	width: 40%;
+	display: flex;
+	/* background-color: red; */
+}
+
+.logo-name{
+	text-decoration: none;
+	color: #00FFFF;
+	text-align: center;
+	margin:auto;
+	font-size: 50px;
+	
+}
+
+.logo-name:hover{
+	color: #fff;
+}
+.menu-nav{
+	width:80%;
+	height:100%;
+	margin:auto;
+}
+
+.menu-link {
+	display:inline-block;
+	transition: 0.3s ease;
+	border-top: 4px solid #1F1F1F;
+	border-bottom: 4px solid #1F1F1F;
+	padding: 20px 0px;
+	margin: 10px 30px 20px 0px;
+	font-size: 20px;
+	color:#00FFFF;
+}
+.menu-link:hover {
+	border-top: 4px solid #ffffff;
+	border-bottom: 4px solid #ffffff;
+	padding: 6px 0px;
+	color: #fff;
+}
+.btnLogIn{
+	border: 2px solid #fff;
+	padding: 10px;
+	width: 200px;
+	margin-right: 50px;
+	border-radius: 30px;
+	background-color: #fff;
+	opacity: 0.8;
+	color: #1F1F1F;
+	font-weight: bold;
+	}
+.btnLogIn:hover{
+	opacity: 1;
+}
+/*-----------------------MENU TRÒN-------------------------*/
+.parent2{
+    top: 0px;
+    left: 1100px;
+    position: fixed;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: 20;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.test1{
+    width: 60%;
+    height: 60%;
+    background-color: dimgray;
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    
+    top: 25%;
+    left: 25%;
+    z-index: 19;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+.test1 i{
+    line-height:60px;
+}
+.test2{
+    width: 60%;
+    height: 60%;
+    background-color: dimgray;
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 25%;
+    left: 25%;
+    z-index: 19;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .2s;
+}
+.test2 i{
+    line-height:60px;
+}
+.test3{
+    width: 60%;
+    height: 60%;
+    background-color: dimgray;
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 25%;
+    left: 25%;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .4s;
+}
+.test3 i{
+    line-height: 60px;
+}
+.test4{
+    width: 60%;
+    height: 60%;
+    background-color: dimgray;
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 25%;
+    left: 25%;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .6s;
+}
+.test4 i{
+    line-height: 60px;
+}
+.mask2{
+    top: 0px;
+    left: 1100px;
+    width: 100px;
+    height: 100px;
+    background-color: darkslategray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 21;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+}
+.mask2 i{
+    line-height: 100px;
+}
+/*----------------------------------FORM--------------------------------*/
+                     /*-------------Start-------------*/
+.content-start{
+	margin-top: 105px;
+	width: 100%;
+	background: url(../images/712990.jpg);
+    display: flex;
+    height: 700px;
+    }
+.contain{
+    width: 80%;
+    height: 85%;
+    margin: auto;
+    display: flex;
+}
+/*---------Info---------*/
+.info{
+    width: 40%;
+    background-color: rgba(156, 39, 176, 0.3);
+    display: flex;
+}
+.info-text{
+    margin: auto;
+}
+.info-text h1{
+    color: #fff;
+	padding: 10px;
+}
+.info-text h3{
+    color: #fff;
+    padding: 10px;
+    border: solid 1px #fff;
+    text-align: center
+}
+.info-text h3:hover{
+    background-color: #fff;
+    color: #44122a;
+    cursor: pointer;
+}
+.info-text img{
+    margin-left: 10px;
+    
+}
+
+/*-----------Form-------*/
+.frmDangKy{
+    width: 60%;
+    background-color: rgba(156, 39, 176, 0.3);
+    padding: 20px;
+}
+fieldset{
+    padding: 10px;
+    margin: 8px 10px 10px 8px;
+    background-color: #fff;
+    border: #fff;
+}
+legend{
+    font-size: 25px;
+    padding: 20px;
+    background-color: rgba(156, 39, 176, 1);
+    border-radius: 50px;
+    color: #fff;
+    box-shadow: 0px 3px 5px #545252;
+    font-weight: bold;
+}
+.frmDangKy table{
+    width: 100%;
+    margin:auto;
+}
+.frmDangKy td{
+    border-bottom: solid 1px #eee;
+}
+.label{
+    width: 40%;
+    padding: 10px;
+    text-align: right;
+    padding-right: 10%;
+    color: #44122a;
+    font-weight: bold;
+}
+.field{
+    width: 60%;
+}
+.field input{
+    width: 70%;
+    font-size: 16px;
+}
+.field select{
+    width: 70%;
+    font-size: 16px;
+}
+#rdNam{
+    width: 5%;
+}
+#rdNu{
+    width: 5%;
+}
+#btnDangKy{
+    margin: auto;
+    margin-left: 35%;
+    margin-right: 10px;
+    background-color: #84ecff;
+    
+    
+}
+#btnHuy{
+    background-color: #e22d51;
+    color: #fff;
+}
+.btnForm{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    width: 100px;
+    border-radius: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.btnForm:hover{
+    cursor: pointer;
+}
+.batbuoc{
+    color: #e23451;
+}
+td h5{
+    padding: 10px;
+}
+/*-------------Footer-------------*/	
+footer{
+    height: 350px;
+    position: absolute;
+    top: 810px;
+    width: 100%;
+}
+footer .copyright{
+	height: 50px;
+	margin: auto;
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	display: flex
+}
+footer .copyright .text{
+	margin: auto;
+}
+.contact{
+	background-color: #f4f5f7;
+	height: 300px;
+	display: flex;
+}
+.nav-footer{
+	width: 30%;
+	margin: auto;
+	font-weight: bold;
+	color: #00cbff;
+	text-align: right;
+}
+.info-contact img{
+	height: 40px;
+	padding-right: 20px;
+}
+.info-contact{
+	width: 40%;
+	margin: auto;
+}
+.btn-nav{
+	margin: auto;
+	position: fixed;
+	bottom: 50px;
+	right: 0;
+	opacity: 0.8;
+}
+.contactez-moi{
+	font-weight: bold;
+	font-size: 25px;
+}

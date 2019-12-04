@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thực hành buổi 2</title>
+    <meta charset="utf-8">
+    <style>
+        .a1,
+        td {
+            border: 1px solid black;
+            text-align: center;
+
+        }
+
+        .a1 {
+            width: 400px;
+            height: 200px;
+        }
+
+        td {
+            font-size: 30px;
+            color: chocolate;
+        }
+        img{
+            width: 350px;
+            height: 450px;
+        }
+    </style>
+</head>
+<body>
+    <h2><a href="../index.html">TRANG CHỦ</a></h2>
+    <h1>Chương trình xử lý một số bài toán cơ bản :</h1>
+    <h2>Tam giác nè: </h2>
+    <img src="https://lienminh.garena.vn/images/champions/skin/57_Maokai/1.jpg" id=a11> <br>
+    <button type="button" onclick="Playy()" >Play</button> 
+    <button type="button" onclick="Stopp()" >Stop</button> <br> <br>
+    <script>
+        TamGiac();
+        document.write("<h2> Lũy thừa nè: </h2>");
+        document.write(LuyThua() + "<br>");
+        document.write("<h2> Giai thừa nè: </h2>");
+        GiaiThua(4);
+        document.write("<h2> Làm bảng giải trí: </h2>");
+        TaoBang(4, 5);
+        function TamGiac() {
+            a = eval(prompt("Nhập a:"));
+            b = eval(prompt("Nhập b:"));
+            c = eval(prompt("Nhập c:"));
+            if (a + b > c && a + c > b && b + c > a) {
+                if (a == b && a == c && b == c) document.write("Đây là tam giác đều" + "<br>");
+                else {
+                    if (a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a) {
+                        if (a == b || b == c || a == c)
+                            document.write("Đây là tam giác vuông cân" + "<br>");
+                        else document.write("Đây là tam giác vuông" + "<br>");
+                    }
+                    else {
+                        if (a == b || b == c || c == a) document.write("Đây là tam giác cân " + "<br>");
+                        else document.write("Đây là tam giác thường " + "<br>");
+                    }
+                }
+                document.write("Chu vi tam giác là: " + (a + b + c) + "<br>");
+                p = (a + b + c) / 2;
+                dt = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+                document.write("Diện tích tam giác là: " + dt + "<br>");
+            }
+            else document.write("Tam giác không hợp lệ rồi " + "<br>");
+        }
+        function LuyThua() {
+            n = eval(prompt("Nhập số mũ n:"));
+            a = eval(prompt("Nhập cơ số a: "));
+            gt = 1;
+            for (i = 1; i <= n; i++) gt *= a;
+            return gt;
+        }
+        function GiaiThua(n) {
+            gt = 1;
+            for (i = 1; i <= n; i++) gt *= i;
+            document.write(n + "!=" + gt + "<br>");
+        }
+        function TaoBang(n, m) {
+            document.write("<table class='a1' ");
+            for (i = 1; i <= n; i++) {
+                document.write("<tr>");
+                for (j = 1; j <= m; j++)
+                    document.write("<td>" + i + "-" + j + "</td>");
+                document.write("</tr>");
+
+            }
+            document.write("</table>");
+        }
+        var idq;
+        function Playy()
+        {
+            arrImg=new Array();
+            arrImg[0]="https://a.wattpad.com/cover/162268487-352-k437082.jpg" ;
+            arrImg[1]="https://lienminh.garena.vn/images/champions/skin/57_Maokai/1.jpg";
+            arrImg[2]="http://lienminh360.vn/wp-content/uploads/2018/08/lucian-1280x720.jpg";
+            arrImg[3]="https://ggstorage.oxii.vn/images/oxii-2019-3-8/728x436/ahri-league-of-legends-lol-u7632_3570_2142_189.jpg";
+            arrImg[4]="https://media.comicbook.com/2017/09/league-of-legends-evelynn-1022669.jpg";
+            i=Math.round(Math.random()*4);
+            a11.src=arrImg[i];
+            idq=setTimeout("Playy()",500);
+        }
+        function Stopp(){ clearTimeout(idq) ;}
+
+    </script>
+</body>
+
+</html>

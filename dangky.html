@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trang chủ</title>
+        <link rel="stylesheet" type="text/css" href="css/dangky.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="js/jquery.min.js"></script>
+    </head>   
+    <body>
+    	<!---------------Header--------------->
+    	<header>
+                <div class="logo">
+                    <a href="index.html" class="logo-name">
+                        <strong>Lê Minh Kha </strong>
+                    </a>
+                </div>
+                <div class="menu-nav">
+                    <nav>
+                        <a href="hoctap.html" class="menu-link">Tin tức</a>
+                        <a href="#" class="menu-link">Game online</a>
+                        <a href="gameoffline.html" class="menu-link">Game offline</a>
+                        <a href="#" class="menu-link">Cộng đồng</a>
+                        <a href="dangky.html" class="btnLogIn">ĐĂNG KÝ</a>
+                        <div class="parent2">
+                            <div class="test1"><i class="fa fa-user fa-2x"></i></div>
+                            <div class="test2"><i class="fa fa-graduation-cap fa-2x"></i></div>
+                            <div class="test3"><i class="fa fa-code fa-2x"></i></div>
+                            <div class="test4"><i class="fa fa-envelope-o fa-2x"></i></div>
+                            <div class="mask2"><i class="fa fa-home fa-3x"></i></div>
+                        </div>
+                    </nav>
+                </div>
+            </header> 
+            <script>
+                    $(document).ready(function(){
+                        var active1 = false;
+                        var active2 = false;
+                        var active3 = false;
+                        var active4 = false;
+                        $('.parent2').on('mousedown touchstart',function(){
+                            if(!active1) $(this).find('.test1').css({'background-color': 'gray','transform':'translate(0px,125px)'});
+                            else $(this).find('.test1').css({'background-color': 'dimGray','transform' : 'none'});
+                            if(!active2) $(this).find('.test2').css({'background-color': 'gray','transform':'translate(60px,105px)'});
+                            else $(this).find('.test2').css({'background-color': 'darkGray','transform' : 'none'});
+                            if(!active3) $(this).find('.test3').css({'background-color': 'gray','transform':'translate(105px,60px)'});
+                            else $(this).find('.test3').css({'background-color': 'silver','transform' : 'none'});
+                            if(!active4) $(this).find('.test4').css({'background-color': 'gray','transform':'translate(125px,0px)'});
+                            else $(this).find('.test4').css({'background-color': 'silver','transform' : 'none'});
+                            active1 = !active1;
+                            active2 = !active2;
+                            active3 = !active3;
+                            active4 = !active4;
+                        });
+                    });
+                </script>
+        <!---------------BatDau--------------->
+        <div class="content-start" >
+        	<div class="contain">
+                <div class="info">
+                    <div class="info-text">
+                        <h1>BẠN KHÔNG PHẢI LÀ THÀNH VIÊN?</h1>
+                        <br>
+                        <h3>Hãy đăng ký ngay nhé<img src="images/arrow-right.png"/>
+                        </h3>
+                        
+                        
+                    </div>
+                </div>
+                <form class="frmDangKy" name="frmDangKy" method="POST">
+                    <fieldset>
+                        <legend>ĐĂNG KÝ THÀNH VIÊN</legend>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="label">Họ tên</td>
+                                    <td class="field">
+                                        <input type="text" name="txtHoTen" id="txtHoTen" required placeholder="Nhập họ tên">
+                                        <span class="batbuoc">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Giới tính</td>
+                                    <td class="field">
+                                        <input type="radio" name="rdGioiTinh" id="rdNam" value="0"> 
+                                            <label for="rdNam">Nam</label>
+                                        <input type="radio" name="rdGioiTinh" id="rdNu" value="1">
+                                        <label for="rdNu">Nữ</label>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Ngày sinh</td>
+                                    <td class="field">
+                                        <input type="date" name="txtNgaySinh" id="txtNgaySinh"required placeholder="Nhập ngày sinh">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Nghề nghiệp</td>
+                                    <td class="field">
+                                        <select>
+                                            <option value="-1">Hãy chọn nghề nghiệp</option>
+                                            <option value="0">Học sinh- Sinh viên</option>
+                                            <option value="1">Công nhân viên chức</option>
+                                            <option value="2">Nội trợ</option>
+                                            <option value="3">Khác</option>
+                                        </select>
+                                        <span class="batbuoc"> * </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Email</td>
+                                    <td class="field">
+                                        <input type="email" name="txtEmail" id="txtEmail" required placeholder="Nhập email">
+                                        <span class="batbuoc">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                        <td class="label">Điện thoại</td>
+                                        <td class="field">
+                                            <input type="tel" name="txtDienThoai" id="txtDienThoai" placeholder="Nhập số điện thoại">
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td class="label">Tên đăng nhập</td>
+                                    <td class="field">
+                                        <input type="text" name="txtTenDangNhap" id="txtTenDangNhap" required placeholder="Nhập tên đăng nhập">
+                                        <span class="batbuoc">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Mật khẩu</td>
+                                    <td class="field">
+                                        <input type="password" name="txtMatKhau" id="txtMatKhau" required placeholder="Nhập mật khẩu">
+                                        <span class="batbuoc">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                        <td class="label"></td>
+                                        <td class="field">
+                                            <h5>Vui lòng điền vào những trường có <span class="batbuoc"> (*) </span></h5>                                           
+                                        </td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                    <input type="submit" value="Đăng ký" name="btnDangKy" id="btnDangKy" class="btnForm">
+                    <input type="reset" value="Hủy" name="btnHuy" id="btnHuy" class="btnForm">
+                </form>
+            </div>
+        </div>
+    <!---------------Footer--------------->
+    <footer>
+            <div class="contact" id="contact">
+                <div class="nav-footer">
+                    <a href="#">THÔNG BÁO</a>
+                    <br/><br/><a href="#">TƯ VẤN</a>
+                    <br/><br/><a href="#">GIỚI THIỆU</a>
+                    <br/><br/><a href="#">BẢN ĐỒ</a>
+                    <br/><br/><a href="#">CHÍNH SÁCH</a>   
+                </div>
+                <div class="info-contact">
+                    <span class="contactez-moi">Liên hệ</span>
+                    <br><br>Số điện thoại : 0911674860
+                    <br><br>Email : khalop7a@gmail.com
+                    <br><br>Địa chỉ : 86 Đinh Bộ Lĩnh, Phường Xuân Khánh, Quận Ninh Kiều, Cần Thơ
+                    <br/><br/><a href="#"><img src="images/ico-fb.png" alt="" ></a>
+                    <a href="#"><img src="images/ico-ig.png" alt="" ></a>
+                    <a href="#"><img src="images/ico-mail.png" alt="" ></a>
+                </div>     
+            </div>
+            <div class="copyright">
+                <div class="text">Copyright © 2019. Designed by Kha</div>
+            </div>
+        </footer>
+    <!---------------Nut dieu huong--------------->
+        <div class="btn-nav">
+            <a href="#">
+                <img src="images/top.png" alt="" width="40px">
+            </a>
+            <br>
+            <a href="#contact">
+                <img src="images/bot.png" alt="" width="40px">
+            </a>
+        </div>
+    </body>
+</html>

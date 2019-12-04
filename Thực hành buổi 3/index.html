@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        table, tr,td{
+            border: 1px solid black;
+            
+        }
+        .a1{
+            color: red;
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        .a2{
+            color: white;
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function myFunction(path)
+        {
+        
+        }
+    </script>
+</head>
+
+<body>
+    <h2><a href="../index.html">TRANG CHỦ</a></h2>
+    <form>
+        <table style="width:600px ; height:300px">
+            <tr>
+                <td style="width:40%;" >Mã sp:</td>
+                <td style="width: 35%;" rowspan="3">
+                        <input type="text"> <br> <br>
+                        <select name="hinh" id="TrucMap" onchange="myFunction(path)">
+                            <option>Siêu xe</option>
+                            <option>Xe ba gác</option>
+                            <option>Xe buýt </option>
+                            <option>Xe lu</option>
+                        </select> <br> <br>
+                        <input type="text"> 
+                </td>
+                <td rowspan="3">
+                    <img src="https://cdn.24h.com.vn/upload/2-2019/images/2019-05-25/1558802221-860-vi-dau-sieu-pham-hoat-hinh-he-doraemon-vua-quen-vua-la-unnamed--8--1558666578-width739height559.png"
+                        alt="Không có ảnh rồi bé" width="200px" height="200px">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Hình sp:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Giá:</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Chọn">
+                </td>
+                <td></td>
+            </tr>
+
+
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    Hello Trúc
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div style="width:1000px ; height: 300px; position: relative;">
+        <div style="width:50% ; height: 100% ; background-color:yellow ; position:absolute; left: 0;">
+            <p class="a1">Huỳnh Huệ Trúc </p>
+            <p class="a1">B1706774</p>
+        </div>
+        <div style="width:50% ; height: 100% ; background-color:rgb(123,100,3); position:absolute; right: 0;">
+                <p class="a2">Lê Minh Kha </p>
+                <p class="a2">B1706592</p>
+            </div>
+    </div>
+</body>
+
+</html>
